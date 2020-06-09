@@ -1,17 +1,37 @@
 \documentclass[11pt]{book}
 
+% \usepackage[showcrop,showframe,papersize={5.5in,8.5in}]{geometry}
+\usepackage[papersize={5.5in,8.5in},bindingoffset=.25in]{geometry}
+
 \usepackage{xifthen}
 \usepackage{makeidx}
 \makeindex
 \usepackage[nottoc]{tocbibind}
 \usepackage[font=footnotesize]{idxlayout}
 
+\usepackage{fancyhdr}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+\setcounter{tocdepth}{1}
+
 \usepackage{fontspec}
-\setmainfont[Numbers=OldStyle]{TeX Gyre Schola}
+\setmainfont[Ligatures={Common,TeX}, Numbers=OldStyle]{TeX Gyre Schola}
+
+\usepackage{microtype}
 
 \usepackage{hyperref}
 
 \usepackage{graphicx}
+
+\usepackage[all]{nowidow}
+
+\hyphenation{Na-po-le-on-ic}
+\hyphenation{stra-te-gic-al}
+\hyphenation{ap-proached}
+\hyphenation{Chat-ham}
+\hyphenation{re-serve}
 
 \newcommand{\warcourse}[2]{%
   \begin{center}
@@ -32,7 +52,7 @@
  }%
 }
 
-\newcommand{\simpletitle}{Some Principles of Maritime Strategy}
+\newcommand{\simpletitle}{Some Principles \\ of \\ Maritime Strategy}
 \title{\simpletitle}
 
 \author{Julian Stafford Corbett \\[1em] London \\[1em] 1911}
@@ -40,6 +60,8 @@
 \date{}
 
 \begin{document}
+
+\emergencystretch 2em%
 
 \setlength{\baselineskip}{1.2\baselineskip}
 \frontmatter
@@ -191,7 +213,7 @@ in this respect that most deliberations are merely verbal contentions
 which rest on no firm foundation, and end either in every one retaining 
 his own opinion, or in a compromise from considerations of mutual       
 respect---a middle course of no actual value.''\footnote{Clausewitz,    
-\emph{\idx[On War]{Clausewitz, General Karl von!\emph{On War}}}, p. ix. 
+\emph{\idx[On War]{Clausewitz, General Karl von!\emph{On War}}}, p.~ix. 
 The references are to Colonel Graham's translation of the third German  
 edition, but his wording is not always followed exactly.}               
 
@@ -275,7 +297,7 @@ from the normal. But for the most part they have been departures made with
 open eyes by geniuses who could perceive in the accidents of the case a
 just reason for the departure.
 
-Take an analogous example, and the province of strategical theory becomes
+Take an analogous example, and the province of stra\-te\-gic\-al theory becomes
 clear at once. Navigation and the parts of seamanship that belong to it
 have to deal with phenomena as varied and unreliable as those of the
 conduct of war. Together they form an art which depends quite as much as
@@ -289,8 +311,8 @@ Because storms do not always behave in the same way, because currents are
 erratic, will the most practical seaman deny that the study of the normal
 conditions are useless to him in his practical decisions?
 
-If, then, the theoretical study of strategy be approached in this way---if,
-that is, it be regarded not as a substitute for judgment and experience,
+If, then, the theoretical study of strategy be ap\-proached in this way---if,
+that is, it be regarded not as a sub\-stit\-ute for judgment and experience,
 but as a means of fertilising both, it can do no man harm. Individual
 thought and common-sense will remain the masters and remain the guides to
 point the general direction when the mass of facts begins to grow
@@ -1008,7 +1030,7 @@ various forms. Leaving therefore our first classification of wars into
 offensive and defensive we will pass on to the second, which is the only
 one of real practical importance.
 
-\chapter[Natures of Wars, cont'd.]{Natures of Wars---Limited and Unlimited}
+\chapter{Natures of Wars---Limited and Unlimited}
 
 The second classification to which we are led by the political theory of
 war, is one which \idx[Clausewitz]{Clausewitz, General Karl von!theory} was the first to formulate and one to which he
@@ -1235,15 +1257,14 @@ him to conclude peace on our terms; and secondly, those in which our
 object is \emph{merely to make some conquests on the frontiers of his   
 country}, either for the purpose of retaining them permanently or of    
 turning them to account as a matter of exchange in settling terms of    
-peace.''\footnote{Ibid, Preparatory Notice, p. vii.} It was in his      
+peace.''\footnote{Ibid, Preparatory Notice, p.~vii.} It was in his      
 eighth book that he intended, had he lived, to have worked out the      
 comprehensive idea he had conceived. Of that book he says, ``The chief  
 object will be to make good the two points of view above mentioned, by  
 which everything will be simplified and at the same time be given the   
 breath of life. I hope in this book to iron out many creases in the     
 heads of strategists and statesmen, and at least to show the object of  
-action and the real point to be considered in war.''\footnote{Ibid, p.  
-viii}                                                                   
+action and the real point to be considered in war.''\footnote{Ibid, p.~viii}                                                                   
 
 That hope was never realised, and that perhaps is why his penetrating
 analysis has been so much ignored. The eighth book as we have it is only a
@@ -1681,7 +1702,7 @@ Admiralty to confer with him in September 1813. ``If anyone,'' he said,
 ``wishes to know the history of this war, I will tell them it is our    
 maritime superiority gives me the power of maintaining my army while    
 the enemy are unable to do so.'' (\emph{Letters of Sir T. Byam Martin}) 
-[Navy Records Society], ii, p. 499.}                                    
+[Navy Records Society], ii, p.~499.}                                    
 
 But what if the conditions of the struggle in which we wish to          
 intervene are such that no truly limited theatre is available? In that  
@@ -3126,7 +3147,7 @@ is a feature of naval warfare that is entirely new.\footnote{But not
 without analogous precedent. In the later Middle Ages small craft were  
 assigned the function in battle of trying to wedge up the rudders of    
 great ships or bore holes between wind and water. See \emph{Fighting    
-Instructions} (Navy Record Society), p. 13.} For all practical purposes 
+Instructions} (Navy Record Society), p.~13.} For all practical purposes 
 it was unknown until the full development of the mobile torpedo. It is  
 true that the fireship as originally conceived was regarded as having   
 something of the same power. During the Dutch wars---the heyday of its   
@@ -3326,7 +3347,7 @@ confusion, even to the most lucid writers. ``The word concentration,''
 says one of the most recent of them, ``evokes the idea of a grouping of  
 forces. We believe, in fact, that we cannot make war without grouping   
 ships into squadrons and squadrons into fleets.''\footnote{Daveluy,      
-\emph{L'Esprit de la Guerre Navale}, vol. i, p. 27, note.}              
+\emph{L'Esprit de la Guerre Navale}, vol. i, p.~27, note.}              
 
 Here in one sentence the word hovers between
 the formation of fleets and their strategical distribution. Similar
@@ -3893,7 +3914,7 @@ without sighting an enemy's sail. Ignorant of what had happened, \idx[Howe]{Howe
 cruised for a week practising the ships ``in connected movements so      
 particularly necessary on the present occasion.'' Then with his fleet    
 in fine condition to carry out preventive tactics in accordance with    
-\idx[Kempenfelt]{Kempenfelt, Admiral Richard}'s well-known exposition,\footnote{See post, pp. 222-24.} he  
+\idx[Kempenfelt]{Kempenfelt, Admiral Richard}'s well-known exposition,\footnote{See p.~\pageref{Kempenfelt}.} he  
 returned to seek the enemy to the eastward, in order to try to draw     
 them from their station at \idx{Scilly} and open the \idx[Channel]{English Channel}. On his way he   
 learnt the convoy had passed in, and with this anxiety off his mind he  
@@ -5389,7 +5410,7 @@ the old close \idx[blockade]{Blockade} as changed conditions will permit.
 
 \chapter{Methods of Disputing Command}
 
-\section{Defensive fleet operations---``a \idx[fleet in being]{Maxims!``Fleet in being''}''}
+\section[Defensive fleet operations]{Defensive fleet operations---``a \idx[fleet in being]{Maxims!``Fleet in being''}''}
 
 In dealing with the theory of sea \idx[command]{Command of the Sea}, attention was called to the
 error of assuming that if we are unable to win the \idx[command]{Command of the Sea} we therefore
@@ -5680,7 +5701,7 @@ that in that case we must make up our mind to have to fight them in
 the end; for if they have really sought an action, they will have been  
 able to fight, seeing that it is impossible to pirouette so long near a 
 fleet without coming to grips.''\footnote{Delarbre, \emph{\idx[Tourville]{Tourville, Admiral Comte de} et   
-la marine de son temps}, p. 339. (Author's note.)} This is as much as   
+la marine de son temps}, p.~339. (Author's note.)} This is as much as   
 to say that a sure point of temporary retreat is necessary to ``a fleet  
 in being,'' and this was an essential part of \idx[Torrington]{Torrington, Admiral Lord}'s idea.         
 
@@ -5697,7 +5718,7 @@ of American Independence\index{Wars!American Independence} we have a memorandum 
 which not only gives the developed idea of ``a \idx[fleet in being]{Maxims!``Fleet in being''}'' and the high
 aggressive spirit that is its essence, but also explains its value, not
 merely as a defensive expedient, but as a means of permitting a drastic
-offensive even when you are as a whole inferior. ``When you know the enemy's
+offensive even when you are as a whole inferior. \label{Kempenfelt}``When you know the enemy's
 designs,'' he says, ``in order to do something effectual you must endeavour
 to be superior to them in some part where they have designs to execute, and
 where, if they succeed, they would most injure you. If your fleet is
@@ -6566,7 +6587,7 @@ that the unwieldy combined mass could be rendered powerless by his
 comparatively homogeneous and mobile fleet, inferior as it was, so      
 long as he could keep it at sea and to the westward. The appreciation   
 of the power of a nimble inferior fleet which he wrote at this time     
-has already been given.\footnote{\emph{Supra}, p. 222.} When the worst  
+has already been given.\footnote{\emph{Supra}, p.~\pageref{Kempenfelt}.} When the worst  
 of the position was fully known, and the enemy was reported off the     
 mouth of the \idx[Channel]{English Channel}, he wrote another to Middleton. His only doubt was 
 whether his fleet had the necessary cohesion and mobility. ``We don't    
@@ -7335,7 +7356,7 @@ financial resources for the evil day, and on the other, when that day
 comes, will deny to the enemy the possibility of choking our financial
 vigour by sufficiently checking the flow of our trade.
 
-\section{Attack, defence, and support of military expeditions}
+\section[Attack, defence, and military expeditions]{Attack, defence, and support of military expeditions}
 
 The attack and defence of oversea expeditions are governed in a large
 measure by the principles of attack and defence of trade. In both cases it
@@ -8199,8 +8220,9 @@ The advantages of Defence are chiefly:--
 
 True Defensive means waiting for a chance to strike.
 
-    \note When the Dutch burnt our ships at \idx{Chatham}, we were not acting on
-    the defensive, we had laid them up and were doing nothing at all.
+\note When the Dutch burnt our ships at \idx{Chat\-ham}, we were not
+acting on the defensive, we had laid them up and were doing nothing at
+all.
 
 The strength and the essence of the defensive is the counter-stroke.
 
@@ -8294,8 +8316,7 @@ are most highly developed in combined expeditions.
       Invasions = True direct offence.
     \end{tabular}
 
-    Compare these with Sir John Ardagh's classification (Report of Royal
-    Commission on Reserve Forces, 1904):--
+    Compare these with Sir John Ardagh's classification (Report of Royal Commission on Reserve Forces, 1904):--
 
     \begin{tabular}{l}
       ``Raids,'' not exceeding 10,000 men. \\
@@ -8782,7 +8803,7 @@ is sound and applicable:--
     (\emph{i.e.}, the calls upon it so numerous) that it will seek to strike a
     blow which solve all the difficulties; \emph{e.g.}, Sir Palmes Fairborne's
     solution of the problem in 1703 (\emph{England in the \idx{Mediterranean}}, Vol.
-    II., p. 234).
+    II., p.~234).
 \end{enumerate}
 
 Also it must be remembered that nine times out of ten the most effective
@@ -9689,10 +9710,14 @@ remembered that other conditions being equal, it is an obvious advantage to
 fight in your own waters rather than in those of the enemy, and more likely
 to ensure that a defeat of the enemy will be decisive.
 
+\vspace{2em}
+
   \rightline{RN War College \idx{Portsmouth}}
   \rightline{January 1909}
 
 \backmatter
+
+\raggedright
 
 \index{Middleton|see{Barham}}
 \index{Paris, Declaration of|see{Declaration of Paris}}
