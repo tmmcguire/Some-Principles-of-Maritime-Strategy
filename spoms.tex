@@ -1,4 +1,7 @@
-\documentclass[11pt]{book}
+\documentclass[10pt]{book}
+
+% \usepackage[showcrop,showframe,papersize={5.5in,8.5in}]{geometry}
+\usepackage[papersize={5.5in,8.5in},bindingoffset=.25in]{geometry}
 
 \usepackage{xifthen}
 \usepackage{makeidx}
@@ -6,12 +9,29 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[font=footnotesize]{idxlayout}
 
+\usepackage{fancyhdr}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+\setcounter{tocdepth}{1}
+
 \usepackage{fontspec}
-\setmainfont[Numbers=OldStyle]{TeX Gyre Schola}
+\setmainfont[Ligatures={Common,TeX}, Numbers=OldStyle]{TeX Gyre Schola}
+
+\usepackage{microtype}
 
 \usepackage{hyperref}
 
 \usepackage{graphicx}
+
+\usepackage[all]{nowidow}
+
+\hyphenation{Na-po-le-on-ic}
+\hyphenation{stra-te-gic-al}
+\hyphenation{ap-proached}
+\hyphenation{Chat-ham}
+\hyphenation{re-serve}
 
 \newcommand{\warcourse}[2]{%
   \begin{center}
@@ -32,7 +52,7 @@
  }%
 }
 
-\newcommand{\simpletitle}{Some Principles of Maritime Strategy}
+\newcommand{\simpletitle}{Some Principles \\ of \\ Maritime Strategy}
 \title{\simpletitle}
 
 \author{Julian Stafford Corbett \\[1em] London \\[1em] 1911}
@@ -40,6 +60,8 @@
 \date{}
 
 \begin{document}
+
+\emergencystretch 2em%
 
 \setlength{\baselineskip}{1.2\baselineskip}
 \frontmatter
@@ -588,7 +610,7 @@ themselves one upon the other, and continuing the struggle with the
 utmost strength and energy they can command till one or other is no     
 longer capable of resistance. This \idx[Clausewitz]{Clausewitz, General 
 Karl von} called ``\idx{Absolute War}.'' But his practical experience   
-and ripe study of history told him at once that ``\idx[Real War]{``Real 
+and ripe study of history told him at once that ``\idx[Real War]{Real War@``Real 
 War''}'' was something radically different. It was true, as he said,    
 that \idx[Napoleon]{Napoleon!methods}'s methods had approximated to the 
 absolute and had given some colour to the use of the absolute idea as   
@@ -1008,7 +1030,7 @@ various forms. Leaving therefore our first classification of wars into
 offensive and defensive we will pass on to the second, which is the only
 one of real practical importance.
 
-\chapter[Natures of Wars, cont'd.]{Natures of Wars---Limited and Unlimited}
+\chapter{Natures of Wars---Limited and Unlimited}
 
 The second classification to which we are led by the political theory of
 war, is one which \idx[Clausewitz]{Clausewitz, General Karl von!theory} was the first to formulate and one to which he
@@ -4903,7 +4925,7 @@ usual French route from \idx{Brest} to the \idx{West Indies}.
 Since rumours of invasion were in the air, it was obviously the better
 course to deal with the enemy's squadrons in home waters and avoid
 dispersal of the fleet in seeking them out. In spite of extraordinarily bad
-weather, therefore, he was permitted to act as he advised. With \idx[\idx[Boscawen]{Boscawen, Admiral Edward}]{\idx[Boscawen]{Boscawen, Admiral Edward}, Admiral Edward} as
+weather, therefore, he was permitted to act as he advised. With \idx[Boscawen]{Boscawen, Admiral Edward} as
 relief, the new form of \idx[blockade]{Blockade} was kept up thenceforward, and with entire
 success. But it must be noted that this success was rather due to the fact
 that the French made no further effort to cross the Atlantic, than to the
@@ -5786,7 +5808,7 @@ invasion passage was concerned \idx[Tourville]{Tourville, Admiral Comte de} was 
 complex compared with those of general naval defence that they must be
 treated later as a special branch of the subject.
 
-The doctrine of the ``\idx[Fleet in being]{``Fleet in being''}'' as formulated and practised by
+The doctrine of the ``\idx[Fleet in being]{Maxims!``Fleet in being''}'' as formulated and practised by
 \idx[Torrington]{Torrington, Admiral Lord} and developed by \idx[Kempenfelt]{Kempenfelt, Admiral Richard} goes no further than this, that
 where the enemy regards the general \idx[command]{Command of the Sea} of a sea area as necessary to
 his offensive purposes, you may be able to prevent his gaining such command
