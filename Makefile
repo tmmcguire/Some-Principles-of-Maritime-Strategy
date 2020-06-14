@@ -1,7 +1,7 @@
 all: spoms.pdf
 
-spoms-signatures.pdf: spoms.pdf
-	sh ./signatures.sh
+spoms-signatures.pdf: spoms.pdf spoms-signatures.tex
+	pdflatex spoms-signatures.tex
 
 spoms.pdf: spoms.tex
 	xelatex spoms.tex
