@@ -9,4 +9,4 @@ spoms.pdf: spoms.tex
 	xelatex spoms.tex
 
 clean:
-	rm -f *.aux *.log* *.out *.pdf *.toc
+	rm -f *.aux *.log* *.out *.pdf *.toc *.idx *.ilg *.ind
